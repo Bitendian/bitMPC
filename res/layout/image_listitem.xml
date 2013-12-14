@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:gravity="center_vertical"
+	android:layout_height="wrap_content">
+	<ImageView android:id="@+id/image_listitem_image"
+		android:padding="1sp" android:scaleType="fitCenter"
+		android:layout_width="64px" android:layout_height="64px"></ImageView>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:orientation="vertical">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" style="@style/listitem_main"
+			android:paddingLeft="5sp" android:paddingRight="5sp"
+			android:paddingTop="2sp" android:paddingBottom="2sp" android:lines="2"
+			android:gravity="center_vertical" android:id="@+id/image_listitem_main">
+		</TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" style="@style/listitem_sub"
+			android:paddingLeft="5sp" android:paddingRight="5sp"
+			android:paddingTop="2sp" android:paddingBottom="2sp" android:lines="1"
+			android:gravity="center_vertical" android:id="@+id/image_listitem_sub">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

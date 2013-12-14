@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TabHost android:id="@+id/tabhost" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</TabWidget>
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+				<!-- PlayList -->
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:id="@+id/tab_playlist">
+					<LinearLayout android:orientation="vertical"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:padding="5sp">
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="fill_parent" android:maxLines="3"
+							android:minLines="3" android:id="@+id/playlist_current"
+							android:gravity="center" style="@style/listitem_main">
+						</TextView>
+						<SeekBar android:layout_height="wrap_content"
+							android:layout_width="fill_parent" android:id="@+id/playlist_seek">
+						</SeekBar>
+					</LinearLayout>
+					<!-- 
+					<ListView android:id="@+id/playlist_playlist"
+						android:choiceMode="singleChoice" android:focusableInTouchMode="false"
+						android:focusable="false" android:layout_weight="1"
+						android:layout_width="fill_parent" android:layout_height="wrap_content">
+					</ListView>
+					-->
+				</LinearLayout>
+
+				<!-- browse -->
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:id="@+id/tab_browse">
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:gravity="center_vertical"
+						android:padding="5sp">
+						<TextView android:id="@+id/browse_path"
+							android:layout_width="wrap_content" android:layout_height="fill_parent"
+							android:layout_weight="1" android:gravity="center_vertical"
+							style="@style/listitem_sub">
+						</TextView>
+						<Button android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/browse_back"
+							android:text="@string/browse_back">
+						</Button>
+					</LinearLayout>
+					<ListView android:id="@+id/browse_results"
+						android:layout_width="fill_parent" android:layout_height="fill_parent">
+					</ListView>
+				</LinearLayout>
+
+				<!-- search -->
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:id="@+id/tab_search">
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:gravity="center_vertical"
+						android:padding="5sp">
+						<EditText android:layout_height="fill_parent" android:id="@+id/search"
+							android:layout_weight="1" android:layout_width="wrap_content"
+							android:singleLine="true"></EditText>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:src="@drawable/search_button"
+							android:id="@+id/search_do"></ImageButton>
+					</LinearLayout>
+					<ListView android:id="@+id/search_results"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_weight="1"></ListView>
+					<Spinner android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/search_type"
+						android:layout_marginLeft="5sp" android:layout_marginRight="5sp"></Spinner>
+				</LinearLayout>
+
+				<!-- rss -->
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:id="@+id/tab_rss" android:paddingBottom="24px">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:padding="5sp">
+						<Button android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/rss_add"
+							android:text="@string/add"></Button>
+					</LinearLayout>
+					<ListView android:id="@+id/rss_sites"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_weight="1"></ListView>
+				</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="5sp">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/status_image"
+			android:layout_alignParentLeft="true" android:src="@drawable/status_connect" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/repeat_selector"
+				android:id="@+id/repeat_icon" android:layout_toLeftOf="@+id/shuffle_icon" />
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/shuffle_selector"
+				android:id="@id/shuffle_icon" android:layout_marginLeft="10sp"
+				android:layout_gravity="right" android:layout_alignParentRight="true" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

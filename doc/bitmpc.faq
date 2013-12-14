@@ -1,0 +1,40 @@
+* Where player controls are?
+
+All player controls, volume bar and URL player buttons appears when you slide the bottom panel (notice SLIDER label at middle bottom).
+
+* How gestures works?
+
+With gestures activated:
+A gesture over item from left/middle to right, (at least 80 pixels) ending at right edge deletes playlist item
+A gesture over item from right/middle to left, (at least 80 pixels) ending at left edge begins playlist item move.
+
+* How move works?
+
+With move state activated (by context menu or gesture) moving can be cancelled touching any other playlist item. Touching moving item lets drags item up or down. List can be scrolled while moving just keeping moving element on the top (or bottom) while touching.
+
+* Can I handle the player without sliding the control panel?
+
+Yes. The little icon at left on status bar is clickable.
+
+		click		long click
+playing		pause		stop
+paused		play		stop
+stoped		play		disconnect
+disconnected	connect		not used
+
+* Can I (de)activate repeat or random?
+
+Yes. Status bar icons are clickable.
+
+* How rss works?
+
+As any other rss player. You can subscribe to your favorite podcasts on your bitmpc client and load any audio chapter on MPD server by clicking on it. All rss info (URL, picture) is saved on client. bitmpc loads rss audio resource like any other URL playing on server. Subscription is updated when needed, audio resources lists are not cached.
+
+* bitmpc doesn't works on android X.Y in my Z device.
+
+We're sorry. You can send us an email with your configuration and we'll try to run it on an emulator, and if it fails, we'll try to fix it. Or you can try to compile it for your platform and send us a how to or a patch. You can ask for source code emailing the authors.
+
+* bitmpc is not eyecandy as others.
+
+Well. We put all our effort on it, but [lamentablemente] we are not graphical designers. If you have some idea, or even better, if you have some graphic work to share with us, we'll very happy to integrate it in this application. (We are looking for some grey little icons for audio tags; like song, artist, genre... now)
+

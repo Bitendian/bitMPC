@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/hostscontextmenu_edit" android:id="@+id/hostscontextedit" android:titleCondensed="@string/hostscontextmenu_edit"></item>
+<item android:title="@string/hostscontextmenu_delete" android:id="@+id/hostscontextdelete" android:titleCondensed="@string/hostscontextmenu_delete"></item>
+</menu>

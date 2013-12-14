@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="options">
+		<item>Artist</item>
+		<item>Album</item>
+		<item>Title</item>
+		<item>Track</item>
+		<item>Name</item>
+		<item>Genre</item>
+		<item>Date</item>
+		<item>Composer</item>
+		<item>Performer</item>
+		<item>Disk</item>
+		<item>Filename</item>
+		<item>AlbumArtist</item>
+		<item>Any</item>
+		<item>Query</item>
+	</string-array>
+</resources>

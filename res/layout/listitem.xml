@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:id="@+id/listitem_item">
+	<TextView android:layout_height="fill_parent"
+		android:layout_width="fill_parent" style="@style/listitem_main"
+		android:paddingLeft="5sp" android:paddingRight="5sp"
+		android:paddingTop="2sp" android:paddingBottom="2sp" android:lines="1"
+		android:gravity="center_vertical" android:id="@+id/listitem_main">
+	</TextView>
+	<TextView android:layout_height="fill_parent"
+		android:layout_width="fill_parent" style="@style/listitem_sub"
+		android:paddingLeft="5sp" android:paddingRight="5sp"
+		android:paddingTop="2sp" android:paddingBottom="2sp" android:lines="1"
+		android:gravity="center_vertical" android:id="@+id/listitem_sub">
+	</TextView>
+</LinearLayout>

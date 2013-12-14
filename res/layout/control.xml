@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:id="@+id/sliding_slider">
+	<SlidingDrawer android:layout_height="wrap_content"
+		android:handle="@+id/sliding_text" android:content="@+id/sliding_content"
+		android:layout_width="wrap_content" android:soundEffectsEnabled="true">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/playlist_slide"
+			android:id="@id/sliding_text" style="@style/label">
+		</TextView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@id/sliding_content"
+			android:orientation="vertical" android:background="#F0444444"
+			android:clickable="true" android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@id/sliding_content"
+				android:gravity="center_horizontal">
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:src="@drawable/previous" android:id="@+id/playlist_previous"
+					android:layout_marginTop="10px">
+				</ImageButton>
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:src="@drawable/stop" android:id="@+id/playlist_stop"
+					android:layout_marginTop="10px">
+				</ImageButton>
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:src="@drawable/play" android:id="@+id/playlist_play"
+					android:layout_marginTop="10px">
+				</ImageButton>
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:src="@drawable/pause" android:id="@+id/playlist_pause"
+					android:layout_marginTop="10px">
+				</ImageButton>
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:src="@drawable/next" android:id="@+id/playlist_next"
+					android:layout_marginTop="10px">
+				</ImageButton>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@id/sliding_content"
+				android:paddingTop="5px" android:gravity="center_vertical">
+				<SeekBar android:id="@+id/playlist_volume"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="10px" android:layout_marginRight="10px"
+					android:layout_weight="1">
+				</SeekBar>
+				<ImageButton android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/url"
+					android:id="@+id/playlist_url" android:layout_margin="2px">
+				</ImageButton>
+			</LinearLayout>
+		</LinearLayout>
+	</SlidingDrawer>
+</FrameLayout>

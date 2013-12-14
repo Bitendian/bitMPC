@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/playlistmenu_remove"
+		android:titleCondensed="@string/playlistmenu_remove" android:id="@+id/playlistmenu_remove"></item>
+	<item android:titleCondensed="@string/playlistmenu_clear"
+		android:id="@+id/playlistmenu_clear" android:title="@string/playlistmenu_clear"></item>
+<!-- 
+	<item android:titleCondensed="@string/playlistmenu_move"
+		android:id="@+id/playlistmenu_move" android:title="@string/playlistmenu_move"></item>
+-->
+</menu>

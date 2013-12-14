@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" android:gravity="top">
+	<ImageView android:layout_width="wrap_content" android:id="@+id/about_logo"
+		android:layout_height="wrap_content" android:src="@drawable/logo"
+		android:scaleType="fitStart">
+	</ImageView>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:gravity="center_horizontal"
+		android:paddingTop="50px">
+		<TextView android:text="@string/app_name"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingTop="10px" android:gravity="center_horizontal">
+		<TextView android:text="@string/about_version"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="@string/about_current"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingTop="10px" android:gravity="center_horizontal">
+		<TextView android:text="@string/about_author"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="@string/about_juanan"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingTop="10px" android:gravity="center_horizontal">
+		<TextView android:text="@string/about_email"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="@string/about_jguerrero"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:gravity="center_horizontal"
+		android:paddingTop="10px">
+		<TextView android:text="@string/about_url_app"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:autoLink="web">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

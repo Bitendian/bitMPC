@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:gravity="center_vertical"
+	android:layout_height="wrap_content">
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/icon_listitem_image"
+		android:padding="5sp"></ImageView>
+	<TextView android:layout_width="fill_parent" style="@style/listitem_main"
+		android:padding="5sp" android:gravity="center_vertical" android:id="@+id/icon_listitem_text"
+		android:lines="2" android:layout_height="wrap_content"></TextView>
+</LinearLayout>
